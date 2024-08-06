@@ -1,0 +1,81 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ini adalah style untuk body html supaya tidak ada scroll */
+
+/* ini adalah transisi berubah warna dalam body (termasuk elemen didalamnya seperti div) */
+body {
+  transition: all 0.7s ease-in-out;
+}
+
+/* ini adalah class container dalam div */
+.container {
+  border: 2px solid red;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ini adalah class title dalam div */
+.title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  padding: 14px;
+}
+
+/* ini adalah class box dalam div */
+.box {
+  width: 80%;
+  /* display flex membuat buletan sejajar horizontal, tidak vertikal */
+  display: flex;
+  /* ini untuk menambah jarak setiap buletan */
+  justify-content: space-evenly;
+  /* ini untuk merubah warna dalam display buletan */
+  background-color: rgb(185, 205, 211);
+  /* ini untuk membuat jarak display menjadi lebih lebar */
+  padding: 24px;
+  /* ini membuat display menjadi lebih lengkung */
+  border-radius: 16px;
+}
+
+/* ini adalah class circle dalam div */
+.circle {
+  /* ini untuk membuat buletan menjadi bulet */
+  width: 50px;
+  /* ini untuk membuat buletan menjadi bulet */
+  height: 50px;
+  /* ini membuat warna buletan */
+  /* background-color: red; */
+  /* ini komponen penting sehingga kotak menjadi bulat */
+  border-radius: 50%;
+  /* ini untuk membuat cursor ketika dibuletan menjadi berbeda */
+  cursor: pointer;
+}
+
+/* ini style css untuk class circle div1 */
+.red {
+  background-color: red;
+}
+
+/* ini style css untuk class circle div2 */
+.gray {
+  background-color: gray;
+}
+
+/* ini style css untuk class circle div3 */
+.green {
+  background-color: green;
+}
+
+/* ini style css untuk class circle div4 */
+.black {
+  background-color: black;
+}

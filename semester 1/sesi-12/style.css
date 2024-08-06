@@ -1,0 +1,114 @@
+/* ini adalah clearing yang berguna supaya body dari html di web ada disettingan default */
+*,
+html,
+body :root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: yellow;
+}
+
+/* container adalah class dari <div> di HTML */
+.container {
+  /* box-shadow adalah property yang digunakan untuk membuat shadow pada element */
+  box-shadow: 10px 10px;
+  /* display adalah property yang digunakan untuk mengatur bagaimana sebuah element akan ditampilkan */
+  display: flex;
+  /* flex-direction adalah property yang digunakan untuk mengatur arah flex container */
+  flex-direction: column;
+  /* gap adalah property yang digunakan untuk memisahkan antar child flex container */
+  gap: 10px;
+  /* border ini untuk merubah warna radius dalam container*/
+  border: 1px solid black;
+  /* margin ini berguna untuk membuat class container supaya ditengah web 
+  dengan format 0 auto */
+  margin: 0 auto;
+  /* width ini berguna supaya radius border dari class container semakin kecil */
+  width: 500px;
+  /* padding ini berguna supaya yang didalam class container lebih melebar */
+  padding: 16px;
+}
+
+#hCek {
+  margin: 0 auto;
+  padding: 20px 50px 20px 50px;
+  /* -webkit-text-stroke: 1px rgb(8, 163, 155); */
+  color: black;
+  background-color: yellow;
+  box-shadow: 8px 8px black;
+  border-radius: 20px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#labelAge {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+  margin: 10px auto;
+}
+
+/* inputNumber adalah id dari <input/> di HTML */
+#inputNumber {
+  /* padding adalah untuk memperbesar radius dari column inputNumber */
+  padding: 16px;
+  /* background-color adalah untuk merubah warna dari background inputNumber */
+  background-color: whitesmoke;
+  /* color adalah untuk merubah warna dari teks yang diinput langsung */
+  color: gray;
+  /* font-size adalah untuk merubah ukuran teks dalam inputNumber */
+  font-size: 20px;
+  /* border adalah untuk merubah radius dalam inputNumber dengan memasukkan transparent sehingga border tidak keliatan 
+  bisa juga formatnya digantikan dengan none*/
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+
+#buttonInput {
+  background-color: rgb(4, 4, 68);
+  color: white;
+  box-shadow: 5px 5px 3px snow;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 50px;
+  /* padding adalah untuk memperbesar radius buttonInput */
+  padding: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+#buttonInput:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(252, 252, 252);
+  transition: 0.4s ease-in-out;
+}
+
+label {
+  margin-left: 15px;
+  font-size: 20px;
+  margin-bottom: 8px;
+  height: auto;
+  width: auto;
+}
+
+.result {
+  margin-top: 10px;
+  padding: 10px;
+  font-weight: bold;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  box-shadow: 10px 10px black;
+  background-color: orange;
+  border-radius: 10px;
+  margin: 0 auto;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>sesi-14 eafedesis</title>
+  </head>
+  <body>
+    <h1>EAFEDESIS PIANO</h1>
+    <p>
+      This is the masterpieace of a coding about making piano sounds using
+      JavaScript
+    </p>
+    <div class="container">
+      <div id="note"></div>
+    </div>
+  </body>
+
+  <script>
+    const chords = ["A", "C", "D", "E", "F"];
+    const note = document.getElementById("note");
+
+    chords.forEach((chord) => {
+      const button = document.createElement("button");
+
+      button.addEventListener("click", () => {
+        const sound = new Audio(`assets/${chord}.wav`);
+        sound.play();
+        console.log(chord);
+      });
+
+      button.textContent = chord;
+
+      note.appendChild(button);
+    });
+  </script>
+</html>

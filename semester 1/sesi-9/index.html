@@ -1,0 +1,97 @@
+<style>
+  *,
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    max-width: 50%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  video {
+    display: block;
+    width: 100%;
+    border: 5px solid red;
+  }
+
+  .video-component {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px 12px;
+  }
+
+  .btn {
+    border: none;
+    padding: 10px;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 8px;
+  }
+
+  .btn-play {
+    background-color: gray;
+    color: whitesmoke;
+  }
+
+  .btn-pause {
+    background-color: lightgray;
+    color: black;
+  }
+
+  .btn-minimize {
+    background-color: orangered;
+    color: white;
+  }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="" href="styles.css" />
+    <title>car video</title>
+  </head>
+  <body>
+    <div class="container">
+      <video width="720">
+        <source src="assets/videos/footage.mp4" type="video/mp4" />
+      </video>
+      <div class="video-component">
+        <button onclick="playVideo()" class="btn btn-play">Play</button>
+        <button onclick="pauseVideo()" class="btn btn-pause">Pause</button>
+        <button onclick="minimizeVideo()" class="btn btn-minimize">
+          Minimize
+        </button>
+      </div>
+    </div>
+  </body>
+  <script>
+    const videoComponent = document.querySelector("video");
+    function playVideo() {
+      console.log("playVideo");
+      var video = document.querySelector("video");
+      video.play();
+      videoComponent.playVideo();
+    }
+    function pauseVideo() {
+      console.log("pauseVideo");
+      var video = document.querySelector("video");
+      video.pause();
+      videoComponent.pauseVideo();
+    }
+    function minimizeVideo() {
+      console.log("minimizeVideo");
+      var video = document.querySelector("video");
+      videoComponent.requestPictureInPicture();
+      video.style.width = "50%";
+      video.style.height = "50%";
+    }
+  </script>
+</html>
